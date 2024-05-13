@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+                <span class="close">&times;</span>
+                <!-- Formulario de Registro y Login -->
+                <div class="container">
+                    <div class="form-content">
+                        <button id="closeButton" class="close-button">&times;</button>
+                        <img src="dmaldy-fotor-2024032612528.png" alt="" class="form-image">
+                        <h1 id="title"><i class="fas fa-user"></i> SignUp</h1>
+                        <div class="social-icons">
+                            <i class="fab fa-facebook social-icon" ></i>
+                            <i class="fab fa-instagram social-icon"></i>
+                            <i class="fas fa-envelope social-icon"></i>
+                            <i class="fab fa-tiktok social-icon"></i>
+                        </div>
+                        
+                        <form id="form" action="#" method="post">
+                            <div class="input-group" id="inputGroup">
+                                <div class="input-field" id="nameInput">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required class="register-field" required >
+                                    <span id="nombreWarning"  class="warnings"></span>
+                                </div>
+                                <div class="input-field" id="apellidoInput">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required class="register-field" required >
+                                    <span id="apellidoWarning"  class="warnings"></span>
+                                </div>
+                                <div class="input-field" id="phoneInput">
+                                    <i class="fas fa-phone"></i>
+                                    <input type="text" id="telefono" name="telefono" placeholder="Teléfono" required class="register-field" required  >
+                                    <span id="telefonoWarning"  class="warnings"></span>
+                                </div>
+                                <div class="input-field" id="emailInput">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="text" id="correo" name="correo" placeholder="Correo" required class="login-field" required>
+                                    <span id="correoWarning"  class="warnings"></span>
+                                </div>
+                                <div class="input-field" id="input-region">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                    <select id="region" name="region" required class="register-field" required>
+                                        <option value="">Region</option>
+                                        <option value="Arica y Parinacota">Arica y Parinacota</option>
+                                        <option value="Atacama">Atacama</option>
+                                        <option value="Iquique y Tarapaca">Iquique y Tarapaca</option>
+                                        <option value="Coquimbo">Coquimbo</option>
+                                        <option value="Valparaiso">Valparaiso</option>
+                                        <option value="O'Higgins">O'Higgins</option>
+                                        <option value="Maule">Maule</option>
+                                        <option value="Nuble">Nuble</option>
+                                        <option value="Bio-Bio">Bio-Bio</option>
+                                        <option value="Araucania">Araucania</option>
+                                        <option value="Los Rios">Los Rios</option>
+                                        <option value="LosLagos">Los Lagos</option>
+                                        <option value="Aysen">Aysen</option>
+                                        <option value="Magallanes">Magallanes</option>
+                                        <option value="Metropolitana">Metropolitana</option>
+                                    </select>
+                                </div>
+                                <div class="input-field" id="input-comuna">
+                                    <i class="fa-solid fa-location-arrow"></i>
+                                    <select id="comuna" name="comuna" required>
+                                        <option value="">Comuna</option>
+                                        <option value="Providencia">Providencia</option>
+                                        <option value="Puente Alto">Puente Alto</option>
+                                        <option value="Maipu">Maipu</option>
+                                        <option value="Conchali">Conchali</option>
+                                        <option value="Santiago">Santiago</option>
+                                        <option value="Pudahuel">Pudahuel</option>
+                                        <option value="San Bernardo">San Bernardo</option>
+                                        <option value="Estacion Central">Estacion Central</option>
+                                        <option value="Lo Espejo">Lo Espejo</option>
+                                        <option value="Cerrillos">Cerrillos</option>
+                                        <option value="Independencia">Independencia</option>
+                                        <option value="Las Condes">Las Condes</option>
+                                        <option value="La Reina">La Reina</option>
+                                        <option value="Penalolen">Penalolen</option>
+                                        <option value="Cerro Navia">Cerro Navia</option>
+                                    </select>
+                                </div>
+                                <div class="input-field" id="direccionInput">
+                                    <i class="fa-solid fa-location-arrow"></i>
+                                    <input type="text" id="dire" name="dire" placeholder="Direccion" required>
+                                    <span id="direccionWarning" class="warnings"></span>
+                                </div>
+                                <div class="input-field" id="passwordInput">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" id="password" name="password" placeholder="Contraseña"required class="login-field" required>
+                                    <span id="passwordWarning" class="warnings"></span>
+                                    <div id="passwordStrength"></div>
+                                </div>
+                                <div  id="recibir">
+                                    <input type="checkbox" id="recibir" name="recibir">
+                                    <label for="recibir">Desea recibir mensajes al correo</label>
+                                    <span id="passwordWarning" type="warnings"></span>
+                                </div>
+                                <div id="tyc">
+                                    <input type="checkbox" id="tyc" name="tyc" required>
+                                    <label for="tyc">Acepto los <a href="#">Terminos y Condiciones</a> </label>
+                                    <span id="passwordWarning" type="warnings"></span>
+                                </div>
+                                <div id="remember">
+                                    <input type="checkbox" id="remember" name="remember" >
+                                    <label for="tyc">Recordar password</label>
+                                    <span id="passwordWarning" type="warnings"></span>
+                                </div>
+                                <div class="btn-field">
+                                    <button type="submit" id="SignUp"><i class="fas fa-user-plus"></i> Registro</button>
+                                    <p class="warnings" id="warnings"></p>
+                                    <button type="button" id="SignIn"><i class="fas fa-sign-in-alt"></i> Login</button>
+                                    <p class="warnings" id="warnings"></p>
+                                    <button type="button" id="reportButton"><i class="fas fa-download"></i> Reporte</button>
+                                </div>
+                                <div class="success-message"></div> 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Fin del formulario -->
+    <div id="reportModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Reporte de Usuarios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo</th>
+                        <th>Teléfono</th>
+                    </tr>
+                </thead>
+                <tbody id="reportData">
+                    <!-- Aquí se insertarán los datos de la API -->
+                </tbody>
+                <button id="deleteButton">Eliminar Usuario</button>
+            </table>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const signUpButton = document.getElementById("SignUp");
+            const signInButton = document.getElementById("SignIn");
+            const title = document.getElementById("title");
+            const nameInput = document.getElementById("nameInput");
+            const apellidoInput = document.getElementById("apellidoInput");
+            const phoneInput = document.getElementById("phoneInput");
+            const emailInput = document.getElementById("emailInput");
+            const passwordInput = document.getElementById("passwordInput");
+            const regionInput = document.getElementById("input-region");
+            const comunaInput = document.getElementById("input-comuna");
+            const direccionInput = document.getElementById("direccionInput");
+            const recibirCheckbox = document.getElementById("recibir");
+            const tycCheckbox = document.getElementById("tyc");
+            const rememberCheckbox = document.getElementById("remember");
+
+            // Función para agregar una transición suave
+            function addTransition(element) {
+                element.classList.add("transition");
+            }
+
+            // Función para eliminar una transición suave
+            function removeTransition(element) {
+                element.classList.remove("transition");
+            }
+
+            // Aplicar transiciones suaves a los elementos que cambiarán de opacidad o altura
+            addTransition(nameInput);
+            addTransition(apellidoInput);
+            addTransition(phoneInput);
+            addTransition(regionInput);
+            addTransition(comunaInput);
+            addTransition(direccionInput);
+            addTransition(recibirCheckbox);
+            addTransition(tycCheckbox);
+            addTransition(emailInput);
+            addTransition(passwordInput);
+
+            signInButton.addEventListener("click", function() {
+                title.innerText = "Login";
+                nameInput.style.opacity = "0";
+                nameInput.style.maxHeight = "0";
+                apellidoInput.style.opacity = "0";
+                apellidoInput.style.maxHeight = "0";
+                phoneInput.style.opacity = "0";
+                phoneInput.style.maxHeight = "0";
+                regionInput.style.opacity = "0";
+                regionInput.style.maxHeight = "0";
+                comunaInput.style.opacity = "0";
+                comunaInput.style.maxHeight = "0";
+                direccionInput.style.opacity = "0";
+                direccionInput.style.maxHeight = "0";
+                recibirCheckbox.style.opacity = "0";
+                recibirCheckbox.style.maxHeight = "0";
+                tycCheckbox.style.opacity = "0";
+                tycCheckbox.style.maxHeight = "0";
+                emailInput.classList.add("visible");
+                passwordInput.classList.add("visible");
+                rememberCheckbox.style.opacity = "1";
+                rememberCheckbox.style.maxHeight = "initial";
+            });
+
+            signUpButton.addEventListener("click", function() {
+                title.innerText = "Registro";
+                nameInput.style.opacity = "1";
+                nameInput.style.maxHeight = "initial";
+                apellidoInput.style.opacity = "1";
+                apellidoInput.style.maxHeight = "initial";
+                phoneInput.style.opacity = "1";
+                phoneInput.style.maxHeight = "initial";
+                regionInput.style.opacity = "1";
+                regionInput.style.maxHeight = "initial";
+                comunaInput.style.opacity = "1";
+                comunaInput.style.maxHeight = "initial";
+                direccionInput.style.opacity = "1";
+                direccionInput.style.maxHeight = "initial";
+                recibirCheckbox.style.opacity = "1";
+                recibirCheckbox.style.maxHeight = "initial";
+                tycCheckbox.style.opacity = "1";
+                tycCheckbox.style.maxHeight = "initial";
+                emailInput.classList.remove("visible");
+                passwordInput.classList.remove("visible");
+                rememberCheckbox.style.opacity = "0";
+                rememberCheckbox.style.maxHeight = "0";
+            });
+        });
+    </script>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
